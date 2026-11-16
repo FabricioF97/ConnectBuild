@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ConnectBuild — Conecte sua obra. Controle seu dinheiro.</title>
+<meta name="description" content="ConnectBuild: BuildConnect (obras, cronograma, estoque, cotações e chat) e BuildControl (fluxo de caixa, notas fiscais, INSS e ISSQN) para obras de pequeno porte.">
+<meta property="og:title" content="ConnectBuild — Conecte sua obra. Controle seu dinheiro.">
+<meta name="theme-color" content="#0a2240">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🏗️%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap">
+<link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ============ CABEÇALHO / MENU FIXO ============ -->
+<header class="top">
+ <div class="nav">
+  <a class="logo" href="#inicio" data-go="inicio" aria-label="ConnectBuild, página inicial">Connect<span>Build</span></a>
+  <nav class="menu" aria-label="Principal">
+   <a href="#inicio" data-go="inicio">Início</a>
+   <a href="#inicio" data-sec="modulos">Módulos</a>
+   <a href="#inicio" data-sec="integracao">Integração</a>
+   <a href="#pesquisa" data-go="pesquisa">Pesquisa de Satisfação</a>
+   <a href="#login" data-go="login" id="loginLink" class="login">Login</a>
+  </nav>
+ </div>
+</header>
+
+<main id="conteudo" tabindex="-1">
+
+<!-- ============ TELA 1: LANDING (INÍCIO) ============ -->
+<div class="view" id="v-inicio">
+ <div class="wrap hero"><div class="grid">
+  <div>
+   <span class="kicker">Construção civil de pequeno porte</span>
+   <h1>Conecte sua obra. <em>Controle seu dinheiro.</em></h1>
+   <p class="lead">O ConnectBuild reúne em um só sistema a gestão da obra e o controle financeiro e fiscal. Contratantes, fornecedores e administradores trabalham com os mesmos dados.</p>
+   <div class="cta"><a class="btn" href="#login" data-go="login">Acessar o sistema</a><a class="btn btn-alt" href="#inicio" data-sec="integracao">Ver como funciona</a></div>
+  </div>
+  <div class="panel" aria-hidden="true">
+   <div><span>Cotação · Elétrica</span><b>APROVADA</b></div>
+   <div><span>Etapa: Alvenaria</span><b>72%</b></div>
+   <div><span>Realizado × orçado</span><b>−4,2%</b></div>
+   <div><span>NF-e · Hidráulica</span><b>ARQUIVADA</b></div>
+  </div>
+ </div>
+ <div class="stripe" style="margin-top:48px"></div></div>
+
+ <!-- Módulos -->
+ <section id="modulos"><div class="wrap">
+  <span class="kicker">Módulos</span><h2>Dois módulos. Uma obra sob controle.</h2>
+  <div class="grid g2" style="margin-top:24px">
+   <article class="card"><span class="kicker">Operação</span><h3>BuildConnect</h3>
+    <p>Gestão da obra e relacionamento com fornecedores.</p>
+    <ul><li>Cadastro de obras</li><li>Cronograma físico</li><li>Gestão de estoque de materiais</li><li>Cotações automatizadas com fornecedores</li><li>Chat de comunicação</li><li>Avaliação de fornecedores</li></ul></article>
+   <article class="card"><span class="kicker">Financeiro e fiscal</span><h3>BuildControl</h3>
+    <p>Dinheiro e documentos da obra em ordem.</p>
+    <ul><li>Fluxo de caixa: orçado × realizado</li><li>Conciliação bancária</li><li>Upload de notas fiscais</li><li>Gestão de imóveis e verbas próprias</li><li>Benefícios tributários: ISSQN e INSS</li><li>Apoio ao Imposto de Renda</li></ul></article>
+  </div>
+ </div></section>
+
+ <!-- Integração: fluxo de 5 etapas -->
+ <section id="integracao" style="background:var(--surface);border-top:6px solid var(--navy);border-bottom:6px solid var(--navy)"><div class="wrap">
+  <span class="kicker">Integração</span><h2>Do planejamento ao encerramento</h2>
+  <p class="lead">Cada etapa passa os dados para a seguinte: o orçamento aprovado no BuildConnect chega ao BuildControl sem redigitação.</p>
+  <ol class="flow" id="flow"></ol>
+ </div></section>
+
+ <section><div class="wrap" style="text-align:center">
+  <h2>Pronto para começar?</h2>
+  <p class="lead" style="margin:0 auto 24px">Entre e escolha o módulo.</p>
+  <a class="btn btn-lg" href="#login" data-go="login">Entrar agora</a>
+ </div></section>
+</div>
+
+<!-- ============ TELA 2: PESQUISA DE SATISFAÇÃO ============ -->
+<div class="view" id="v-pesquisa"><section><div class="wrap">
+ <span class="kicker">Pesquisa de Satisfação</span><h2>Sua opinião constrói o ConnectBuild</h2>
+ <p class="lead">Responda sem sair do site. Leva poucos minutos.</p>
+ <div class="formbox">
+  <!-- O endereço do formulário fica em FORM_URL, no script. O src é definido ao abrir esta tela. -->
+  <iframe id="formFrame" title="Formulário de pesquisa de satisfação (Google Forms)" loading="lazy">Carregando…</iframe>
+ </div>
+ <p style="margin-top:16px">O formulário não apareceu? <a id="formLink" href="#" target="_blank" rel="noopener">Abrir em nova aba</a></p>
+</div></section></div>
+
+<!-- ============ TELA 3: LOGIN (SIMULADO) ============ -->
+<div class="view" id="v-login"><div class="demo-banner" role="note">Ambiente de Demonstração - Dados fictícios para fins de avaliação acadêmica</div><div class="auth"><form class="card" id="fLogin" novalidate>
+ <h1 style="font-size:2rem">Login</h1>
+ <p>Acesso de demonstração: use qualquer e-mail válido e uma senha com 4+ caracteres.</p>
+ <div id="lMsg" role="alert"></div>
+ <label for="le">E-mail</label><input id="le" type="email" autocomplete="email" required>
+ <label for="lp">Senha</label><input id="lp" type="password" autocomplete="current-password" required>
+ <button class="btn btn-block" type="submit">Entrar</button>
+</form></div></div>
+
+<!-- ============ TELA 4: DASHBOARD (ÁREA LOGADA) ============ -->
+<div class="view" id="v-dashboard"><section><div class="wrap">
+ <span class="kicker">Área do usuário</span>
+ <h2>Olá, <span id="uname">usuário</span></h2>
+ <p class="lead">Para onde você quer ir agora?</p>
+ <div class="bigbtns">
+  <button class="btn btn-lg" data-go="connect">Acessar BuildConnect</button>
+  <button class="btn btn-lg btn-alt" data-go="control">Acessar BuildControl</button>
+ </div>
+ <button class="btn btn-alt" id="logout">Sair</button>
+</div></section></div>
+
+<!-- ============ APP SIMULADO 1: BUILDCONNECT ============ -->
+<div class="view" id="v-connect"><section><div class="wrap">
+ <span class="kicker">BuildConnect</span><h2>Obra Residencial Centro</h2>
+ <div class="grid g2">
+  <div class="card"><h3>Cronograma físico</h3>
+   <p>Fundação — 100%</p><div class="bar"><i style="width:100%"></i></div>
+   <p style="margin-top:12px">Alvenaria — 72%</p><div class="bar"><i style="width:72%"></i></div>
+   <p style="margin-top:12px">Acabamento — 10%</p><div class="bar"><i style="width:10%"></i></div></div>
+  <div class="card"><h3>Cotações</h3><div class="scroll"><table><tr><th>Item</th><th>Fornecedor</th><th>Valor</th></tr><tr><td>Cimento</td><td>Forn. A</td><td>R$ 1.240</td></tr><tr><td>Fiação</td><td>Forn. B</td><td>R$ 3.980</td></tr></table></div></div>
+ </div>
+ <p style="margin-top:24px"><button class="btn btn-alt" data-go="dashboard">← Voltar ao painel</button></p>
+</div></section></div>
+
+<!-- ============ APP SIMULADO 2: BUILDCONTROL ============ -->
+<div class="view" id="v-control"><section><div class="wrap">
+ <span class="kicker">BuildControl</span><h2>Fluxo de caixa</h2>
+ <div class="grid g3">
+  <div class="card kpi"><span>Orçado</span><b>R$ 120.000</b></div>
+  <div class="card kpi"><span>Realizado</span><b>R$ 46.300</b></div>
+  <div class="card kpi"><span>Saldo</span><b>R$ 73.700</b></div>
+ </div>
+ <div class="card" style="margin-top:24px"><h3>Notas fiscais recentes</h3><div class="scroll"><table><tr><th>Nº</th><th>Prestador</th><th>Retenção</th></tr><tr><td>1042</td><td>Hidráulica Silva</td><td>ISSQN + INSS</td></tr><tr><td>1055</td><td>Elétrica Souza</td><td>ISSQN</td></tr></table></div></div>
+ <p style="margin-top:24px"><button class="btn btn-alt" data-go="dashboard">← Voltar ao painel</button></p>
+</div></section></div>
+
+</main>
+
+<footer><div class="wrap">© 2026 ConnectBuild · Projeto integrador, Fatec Antonio Russo, São Caetano do Sul (SP). Dados e telas são demonstrativos.</div></footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
